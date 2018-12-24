@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Chapter3_3_4 {
 	
-	//2.½«½Ó¿Ú×÷Îª²ÎÊı½øĞĞ´«µİ
+	//2.å°†æ¥å£ä½œä¸ºå‚æ•°è¿›è¡Œä¼ é€’
 	public static String processFile(BufferedReaderProcessor b)throws IOException {
 		
 		try(BufferedReader br = new BufferedReader(new FileReader("src/xxx.txt"))) {
@@ -15,7 +15,7 @@ public class Chapter3_3_4 {
 		}
 	}
 	public static void main(String[] args) throws IOException {
-		//3.´«µİlambda
+		//3.ä¼ é€’lambda
 		String str = processFile((BufferedReader br)->br.readLine());
 		System.out.println(str);
 		str = processFile((BufferedReader br)->br.readLine()+br.readLine());
@@ -23,7 +23,7 @@ public class Chapter3_3_4 {
 	}
 
 }
-//1.¶¨ÒåÒ»¸ö½Ó¿Úº¯Êı
+//1.å®šä¹‰ä¸€ä¸ªæ¥å£å‡½æ•°
 interface BufferedReaderProcessor {
 	String process(BufferedReader br)throws IOException;
 }

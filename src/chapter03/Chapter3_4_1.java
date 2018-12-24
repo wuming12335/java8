@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 该注解表示改接口会被设计成为一个函数式接口
+ * 璇ユ敞瑙ｈ〃绀烘敼鎺ュ彛浼氳璁捐鎴愪负涓�涓嚱鏁板紡鎺ュ彛
  */
 @FunctionalInterface
 interface Predicate<T> {
