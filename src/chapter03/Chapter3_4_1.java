@@ -12,6 +12,7 @@ interface Predicate<T> {
 	boolean test(T t);
 }
 
+
 public class Chapter3_4_1 {
 	public static <T> List<T> filter(List<T> list, Predicate<T> p) {
 		List<T> results = new ArrayList<>();
